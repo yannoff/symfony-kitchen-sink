@@ -1,0 +1,15 @@
+nginx:
+    image: nginx:alpine
+    links:
+        - fpm
+    ports:
+        - "8088:80"
+
+fpm:
+    image: yannoff/php-fpm
+    volumes:
+        - ./:/var/www/html
+
+    ports:
+        - 9000
+        - "8000:8000"
