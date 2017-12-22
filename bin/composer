@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Wrapper for docker-contained composer command
+#
+docker-compose exec fpm composer "$@"
