@@ -8,6 +8,7 @@ require:
     symfony/framework-bundle: ^4.0
     symfony/lts: ^4@dev
     symfony/yaml: ^4.0
+    yannoff/composer-dotenv-handler: ^1.1
 require-dev:
     symfony/dotenv: ^4.0
     symfony/web-server-bundle: ^4.0

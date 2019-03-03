@@ -2,7 +2,7 @@ _readme:
     - 'This file locks the dependencies of your project to a known state'
     - 'Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies'
     - 'This file is @generated automatically'
-content-hash: 259c4d6a0ccd8def499abeb840521e18
+content-hash: 80fd49eebed984e5c6414364d457b45a
 packages:
     -
         name: psr/cache
@@ -338,6 +338,41 @@ packages:
         description: 'Symfony DependencyInjection Component'
         homepage: 'https://symfony.com'
         time: '2017-12-04T20:15:30+00:00'
+    -
+        name: symfony/dotenv
+        version: v4.0.1
+        source:
+            type: git
+            url: 'https://github.com/symfony/dotenv.git'
+            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/dotenv/zipball/60586c549ffe7d8a6a898f9959736776604a6b84'
+            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+            shasum: ''
+        require:
+            php: ^7.1.3
+        require-dev:
+            symfony/process: ~3.4|~4.0
+        type: library
+        extra:
+            branch-alias: { dev-master: 4.0-dev }
+        autoload:
+            psr-4: { Symfony\Component\Dotenv\: '' }
+            exclude-from-classmap: [/Tests/]
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            - { name: 'Fabien Potencier', email: fabien@symfony.com }
+            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+        description: 'Registers environment variables from a .env file'
+        homepage: 'https://symfony.com'
+        keywords:
+            - dotenv
+            - env
+            - environment
+        time: '2017-11-30T15:11:43+00:00'
     -
         name: symfony/event-dispatcher
         version: v4.0.1
@@ -856,42 +891,42 @@ packages:
         description: 'Symfony Yaml Component'
         homepage: 'https://symfony.com'
         time: '2017-12-04T18:34:52+00:00'
-packages-dev:
     -
-        name: symfony/dotenv
-        version: v4.0.1
+        name: yannoff/composer-dotenv-handler
+        version: 1.1.3
         source:
             type: git
-            url: 'https://github.com/symfony/dotenv.git'
-            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+            url: 'https://github.com/yannoff/composer-dotenv-handler.git'
+            reference: 93aeb2e613fe614669a7718574b3665c4a1e7220
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/dotenv/zipball/60586c549ffe7d8a6a898f9959736776604a6b84'
-            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+            url: 'https://api.github.com/repos/yannoff/composer-dotenv-handler/zipball/93aeb2e613fe614669a7718574b3665c4a1e7220'
+            reference: 93aeb2e613fe614669a7718574b3665c4a1e7220
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.1.3'
+            symfony/dotenv: '>=3.4.0'
         require-dev:
-            symfony/process: ~3.4|~4.0
+            composer/composer: ^1.0@dev
+            symfony/filesystem: '^2.3 || ^3 || ^4'
         type: library
         extra:
-            branch-alias: { dev-master: 4.0-dev }
+            class: Yannoff\DotenvHandler\ScriptHandler
         autoload:
-            psr-4: { Symfony\Component\Dotenv\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4: { Yannoff\DotenvHandler\: src/ }
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
-        description: 'Registers environment variables from a .env file'
-        homepage: 'https://symfony.com'
+            - { name: Yannoff, homepage: 'https://github.com/yannoff' }
+        description: 'Composer script to generate .env file against .env.dist template'
+        homepage: 'https://github.com/yannoff/composer-dotenv-handler'
         keywords:
+            - composer
             - dotenv
             - env
-            - environment
-        time: '2017-11-30T15:11:43+00:00'
+        time: '2019-02-21T17:59:44+00:00'
+packages-dev:
     -
         name: symfony/process
         version: v4.0.2
