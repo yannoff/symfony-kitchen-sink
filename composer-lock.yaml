@@ -1,8 +1,12 @@
+#
+# This file was generated automatically by Offenbach
+# @see https://github.com/yannoff/offenbach for details
+#
 _readme:
     - 'This file locks the dependencies of your project to a known state'
     - 'Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies'
     - 'This file is @generated automatically'
-content-hash: 80fd49eebed984e5c6414364d457b45a
+content-hash: 9038823b21421e8a31e849639273de11
 packages:
     -
         name: psr/cache
@@ -20,19 +24,25 @@ packages:
             php: '>=5.3.0'
         type: library
         extra:
-            branch-alias: { dev-master: 1.0.x-dev }
+            branch-alias:
+                dev-master: 1.0.x-dev
         autoload:
-            psr-4: { Psr\Cache\: src/ }
+            psr-4:
+                Psr\Cache\: src/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: PHP-FIG, homepage: 'http://www.php-fig.org/' }
+            -
+                name: PHP-FIG
+                homepage: 'http://www.php-fig.org/'
         description: 'Common interface for caching libraries'
         keywords:
             - cache
             - psr
             - psr-6
+        support:
+            source: 'https://github.com/php-fig/cache/tree/master'
         time: '2016-08-06T20:24:11+00:00'
     -
         name: psr/container
@@ -50,14 +60,18 @@ packages:
             php: '>=5.3.0'
         type: library
         extra:
-            branch-alias: { dev-master: 1.0.x-dev }
+            branch-alias:
+                dev-master: 1.0.x-dev
         autoload:
-            psr-4: { Psr\Container\: src/ }
+            psr-4:
+                Psr\Container\: src/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: PHP-FIG, homepage: 'http://www.php-fig.org/' }
+            -
+                name: PHP-FIG
+                homepage: 'http://www.php-fig.org/'
         description: 'Common Container Interface (PHP FIG PSR-11)'
         homepage: 'https://github.com/php-fig/container'
         keywords:
@@ -66,257 +80,377 @@ packages:
             - container-interface
             - container-interop
             - psr
+        support:
+            issues: 'https://github.com/php-fig/container/issues'
+            source: 'https://github.com/php-fig/container/tree/master'
         time: '2017-02-14T16:28:37+00:00'
     -
+        name: psr/event-dispatcher
+        version: 1.0.0
+        source:
+            type: git
+            url: 'https://github.com/php-fig/event-dispatcher.git'
+            reference: dbefd12671e8a14ec7f180cab83036ed26714bb0
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0'
+            reference: dbefd12671e8a14ec7f180cab83036ed26714bb0
+            shasum: ''
+        require:
+            php: '>=7.2.0'
+        type: library
+        extra:
+            branch-alias:
+                dev-master: 1.0.x-dev
+        autoload:
+            psr-4:
+                Psr\EventDispatcher\: src/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: PHP-FIG
+                homepage: 'http://www.php-fig.org/'
+        description: 'Standard interfaces for event handling.'
+        keywords:
+            - events
+            - psr
+            - psr-14
+        support:
+            issues: 'https://github.com/php-fig/event-dispatcher/issues'
+            source: 'https://github.com/php-fig/event-dispatcher/tree/1.0.0'
+        time: '2019-01-08T18:20:26+00:00'
+    -
         name: psr/log
-        version: 1.0.2
+        version: 1.1.3
         source:
             type: git
             url: 'https://github.com/php-fig/log.git'
-            reference: 4ebe3a8bf773a19edfe0a84b6585ba3d401b724d
+            reference: 0f73288fd15629204f9d42b7055f72dacbe811fc
         dist:
             type: zip
-            url: 'https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d'
-            reference: 4ebe3a8bf773a19edfe0a84b6585ba3d401b724d
+            url: 'https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc'
+            reference: 0f73288fd15629204f9d42b7055f72dacbe811fc
             shasum: ''
         require:
             php: '>=5.3.0'
         type: library
         extra:
-            branch-alias: { dev-master: 1.0.x-dev }
+            branch-alias:
+                dev-master: 1.1.x-dev
         autoload:
-            psr-4: { Psr\Log\: Psr/Log/ }
+            psr-4:
+                Psr\Log\: Psr/Log/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: PHP-FIG, homepage: 'http://www.php-fig.org/' }
+            -
+                name: PHP-FIG
+                homepage: 'http://www.php-fig.org/'
         description: 'Common interface for logging libraries'
         homepage: 'https://github.com/php-fig/log'
         keywords:
             - log
             - psr
             - psr-3
-        time: '2016-10-10T12:19:37+00:00'
-    -
-        name: psr/simple-cache
-        version: 1.0.0
-        source:
-            type: git
-            url: 'https://github.com/php-fig/simple-cache.git'
-            reference: 753fa598e8f3b9966c886fe13f370baa45ef0e24
-        dist:
-            type: zip
-            url: 'https://api.github.com/repos/php-fig/simple-cache/zipball/753fa598e8f3b9966c886fe13f370baa45ef0e24'
-            reference: 753fa598e8f3b9966c886fe13f370baa45ef0e24
-            shasum: ''
-        require:
-            php: '>=5.3.0'
-        type: library
-        extra:
-            branch-alias: { dev-master: 1.0.x-dev }
-        autoload:
-            psr-4: { Psr\SimpleCache\: src/ }
-        notification-url: 'https://packagist.org/downloads/'
-        license:
-            - MIT
-        authors:
-            - { name: PHP-FIG, homepage: 'http://www.php-fig.org/' }
-        description: 'Common interfaces for simple caching'
-        keywords:
-            - cache
-            - caching
-            - psr
-            - psr-16
-            - simple-cache
-        time: '2017-01-02T13:31:39+00:00'
+        support:
+            source: 'https://github.com/php-fig/log/tree/1.1.3'
+        time: '2020-03-23T09:12:05+00:00'
     -
         name: symfony/cache
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/cache.git'
-            reference: 3691cb27e436c55af10ee06de30732623fa2f33e
+            reference: f81360f9acb25aa356bc662d8b32bfaa70d264a9
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/cache/zipball/3691cb27e436c55af10ee06de30732623fa2f33e'
-            reference: 3691cb27e436c55af10ee06de30732623fa2f33e
+            url: 'https://api.github.com/repos/symfony/cache/zipball/f81360f9acb25aa356bc662d8b32bfaa70d264a9'
+            reference: f81360f9acb25aa356bc662d8b32bfaa70d264a9
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
             psr/cache: ~1.0
             psr/log: ~1.0
-            psr/simple-cache: ^1.0
+            symfony/cache-contracts: ^1.1.7|^2
+            symfony/polyfill-php80: ^1.15
+            symfony/service-contracts: ^1.1|^2
+            symfony/var-exporter: ^4.4|^5.0
         conflict:
-            symfony/var-dumper: '<3.4'
+            doctrine/dbal: '<2.5'
+            symfony/dependency-injection: '<4.4'
+            symfony/http-kernel: '<4.4'
+            symfony/var-dumper: '<4.4'
         provide:
             psr/cache-implementation: '1.0'
             psr/simple-cache-implementation: '1.0'
+            symfony/cache-implementation: '1.0'
         require-dev:
             cache/integration-tests: dev-master
-            doctrine/cache: ~1.6
-            doctrine/dbal: ~2.4
-            predis/predis: ~1.0
+            doctrine/cache: ^1.6
+            doctrine/dbal: ^2.5|^3.0
+            predis/predis: ^1.1
+            psr/simple-cache: ^1.0
+            symfony/config: ^4.4|^5.0
+            symfony/dependency-injection: ^4.4|^5.0
+            symfony/filesystem: ^4.4|^5.0
+            symfony/http-kernel: ^4.4|^5.0
+            symfony/var-dumper: ^4.4|^5.0
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Cache\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\Cache\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Nicolas Grekas', email: p@tchwork.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Cache component with PSR-6, PSR-16, and tags'
         homepage: 'https://symfony.com'
         keywords:
             - caching
             - psr6
-        time: '2017-11-20T21:12:12+00:00'
+        support:
+            source: 'https://github.com/symfony/cache/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-20T22:06:42+00:00'
     -
-        name: symfony/config
-        version: v4.0.1
+        name: symfony/cache-contracts
+        version: v2.2.0
         source:
             type: git
-            url: 'https://github.com/symfony/config.git'
-            reference: 6e6dbc6d2beff8117b974d74274bff02e43c32a6
+            url: 'https://github.com/symfony/cache-contracts.git'
+            reference: 8034ca0b61d4dd967f3698aaa1da2507b631d0cb
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/config/zipball/6e6dbc6d2beff8117b974d74274bff02e43c32a6'
-            reference: 6e6dbc6d2beff8117b974d74274bff02e43c32a6
+            url: 'https://api.github.com/repos/symfony/cache-contracts/zipball/8034ca0b61d4dd967f3698aaa1da2507b631d0cb'
+            reference: 8034ca0b61d4dd967f3698aaa1da2507b631d0cb
             shasum: ''
         require:
-            php: ^7.1.3
-            symfony/filesystem: ~3.4|~4.0
-        conflict:
-            symfony/finder: '<3.4'
-        require-dev:
-            symfony/finder: ~3.4|~4.0
-            symfony/yaml: ~3.4|~4.0
+            php: '>=7.2.5'
+            psr/cache: ^1.0
         suggest:
-            symfony/yaml: 'To use the yaml reference dumper'
+            symfony/cache-implementation: ''
         type: library
         extra:
-            branch-alias: { dev-master: 4.0-dev }
+            branch-alias:
+                dev-master: 2.2-dev
+            thanks:
+                name: symfony/contracts
+                url: 'https://github.com/symfony/contracts'
         autoload:
-            psr-4: { Symfony\Component\Config\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Contracts\Cache\: ''
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Generic abstractions related to caching'
+        homepage: 'https://symfony.com'
+        keywords:
+            - abstractions
+            - contracts
+            - decoupling
+            - interfaces
+            - interoperability
+            - standards
+        support:
+            source: 'https://github.com/symfony/cache-contracts/tree/v2.2.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-09-07T11:33:47+00:00'
+    -
+        name: symfony/config
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/config.git'
+            reference: 25fe2a2d023c38ade5dbc2d80679462592284ed5
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/config/zipball/25fe2a2d023c38ade5dbc2d80679462592284ed5'
+            reference: 25fe2a2d023c38ade5dbc2d80679462592284ed5
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
+            symfony/filesystem: ^4.4|^5.0
+            symfony/polyfill-ctype: ~1.8
+            symfony/polyfill-php80: ^1.15
+        conflict:
+            symfony/finder: '<4.4'
+        require-dev:
+            symfony/event-dispatcher: ^4.4|^5.0
+            symfony/finder: ^4.4|^5.0
+            symfony/messenger: ^4.4|^5.0
+            symfony/service-contracts: ^1.1|^2
+            symfony/yaml: ^4.4|^5.0
+        suggest:
+            symfony/yaml: 'To use the yaml reference dumper'
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\Config\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Config Component'
         homepage: 'https://symfony.com'
-        time: '2017-11-20T18:22:57+00:00'
+        support:
+            source: 'https://github.com/symfony/config/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-16T15:58:32+00:00'
     -
         name: symfony/console
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/console.git'
-            reference: 2ff6acc1342a0e7c3ad757a80fd837f5b22535a1
+            reference: 037b57ac42cafb64b7b55273fe1786f35d623077
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/console/zipball/2ff6acc1342a0e7c3ad757a80fd837f5b22535a1'
-            reference: 2ff6acc1342a0e7c3ad757a80fd837f5b22535a1
+            url: 'https://api.github.com/repos/symfony/console/zipball/037b57ac42cafb64b7b55273fe1786f35d623077'
+            reference: 037b57ac42cafb64b7b55273fe1786f35d623077
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
             symfony/polyfill-mbstring: ~1.0
+            symfony/polyfill-php73: ^1.8
+            symfony/polyfill-php80: ^1.15
+            symfony/service-contracts: ^1.1|^2
+            symfony/string: ^5.1
         conflict:
-            symfony/dependency-injection: '<3.4'
-            symfony/process: '<3.3'
+            symfony/dependency-injection: '<4.4'
+            symfony/dotenv: '<5.1'
+            symfony/event-dispatcher: '<4.4'
+            symfony/lock: '<4.4'
+            symfony/process: '<4.4'
+        provide:
+            psr/log-implementation: '1.0'
         require-dev:
             psr/log: ~1.0
-            symfony/config: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/event-dispatcher: ~3.4|~4.0
-            symfony/lock: ~3.4|~4.0
-            symfony/process: ~3.4|~4.0
+            symfony/config: ^4.4|^5.0
+            symfony/dependency-injection: ^4.4|^5.0
+            symfony/event-dispatcher: ^4.4|^5.0
+            symfony/lock: ^4.4|^5.0
+            symfony/process: ^4.4|^5.0
+            symfony/var-dumper: ^4.4|^5.0
         suggest:
             psr/log: 'For using the console logger'
             symfony/event-dispatcher: ''
             symfony/lock: ''
             symfony/process: ''
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Console\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\Console\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Console Component'
         homepage: 'https://symfony.com'
-        time: '2017-12-04T12:31:58+00:00'
-    -
-        name: symfony/debug
-        version: v4.0.1
-        source:
-            type: git
-            url: 'https://github.com/symfony/debug.git'
-            reference: 26a15dab86c3820473716be4f846eac774ad4ad9
-        dist:
-            type: zip
-            url: 'https://api.github.com/repos/symfony/debug/zipball/26a15dab86c3820473716be4f846eac774ad4ad9'
-            reference: 26a15dab86c3820473716be4f846eac774ad4ad9
-            shasum: ''
-        require:
-            php: ^7.1.3
-            psr/log: ~1.0
-        conflict:
-            symfony/http-kernel: '<3.4'
-        require-dev:
-            symfony/http-kernel: ~3.4|~4.0
-        type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
-        autoload:
-            psr-4: { Symfony\Component\Debug\: '' }
-            exclude-from-classmap: [/Tests/]
-        notification-url: 'https://packagist.org/downloads/'
-        license:
-            - MIT
-        authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
-        description: 'Symfony Debug Component'
-        homepage: 'https://symfony.com'
-        time: '2017-11-21T09:27:49+00:00'
+        support:
+            source: 'https://github.com/symfony/console/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-28T10:57:20+00:00'
     -
         name: symfony/dependency-injection
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/dependency-injection.git'
-            reference: 652d10dbeabeb6f1cd5b8872dd28a33b045f2f12
+            reference: 8b2ec9f453430252379aea343d02ed3579b18b44
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/dependency-injection/zipball/652d10dbeabeb6f1cd5b8872dd28a33b045f2f12'
-            reference: 652d10dbeabeb6f1cd5b8872dd28a33b045f2f12
+            url: 'https://api.github.com/repos/symfony/dependency-injection/zipball/8b2ec9f453430252379aea343d02ed3579b18b44'
+            reference: 8b2ec9f453430252379aea343d02ed3579b18b44
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
             psr/container: ^1.0
+            symfony/deprecation-contracts: ^2.1
+            symfony/polyfill-php80: ^1.15
+            symfony/service-contracts: ^1.1.6|^2
         conflict:
-            symfony/config: '<3.4'
-            symfony/finder: '<3.4'
-            symfony/proxy-manager-bridge: '<3.4'
-            symfony/yaml: '<3.4'
+            symfony/config: '<5.1'
+            symfony/finder: '<4.4'
+            symfony/proxy-manager-bridge: '<4.4'
+            symfony/yaml: '<4.4'
         provide:
             psr/container-implementation: '1.0'
+            symfony/service-implementation: '1.0'
         require-dev:
-            symfony/config: ~3.4|~4.0
-            symfony/expression-language: ~3.4|~4.0
-            symfony/yaml: ~3.4|~4.0
+            symfony/config: ^5.1
+            symfony/expression-language: ^4.4|^5.0
+            symfony/yaml: ^4.4|^5.0
         suggest:
             symfony/config: ''
             symfony/expression-language: 'For using expressions in service container configuration'
@@ -324,250 +458,541 @@ packages:
             symfony/proxy-manager-bridge: 'Generate service proxies to lazy load them'
             symfony/yaml: ''
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\DependencyInjection\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\DependencyInjection\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony DependencyInjection Component'
         homepage: 'https://symfony.com'
-        time: '2017-12-04T20:15:30+00:00'
+        support:
+            source: 'https://github.com/symfony/dependency-injection/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-28T10:57:20+00:00'
+    -
+        name: symfony/deprecation-contracts
+        version: v2.2.0
+        source:
+            type: git
+            url: 'https://github.com/symfony/deprecation-contracts.git'
+            reference: 5fa56b4074d1ae755beb55617ddafe6f5d78f665
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/deprecation-contracts/zipball/5fa56b4074d1ae755beb55617ddafe6f5d78f665'
+            reference: 5fa56b4074d1ae755beb55617ddafe6f5d78f665
+            shasum: ''
+        require:
+            php: '>=7.1'
+        type: library
+        extra:
+            branch-alias:
+                dev-master: 2.2-dev
+            thanks:
+                name: symfony/contracts
+                url: 'https://github.com/symfony/contracts'
+        autoload:
+            files:
+                - function.php
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'A generic function and convention to trigger deprecation notices'
+        homepage: 'https://symfony.com'
+        support:
+            source: 'https://github.com/symfony/deprecation-contracts/tree/master'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-09-07T11:33:47+00:00'
     -
         name: symfony/dotenv
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/dotenv.git'
-            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+            reference: 264ca18dd6e4ab3cfa525ee52cceff9540a1019e
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/dotenv/zipball/60586c549ffe7d8a6a898f9959736776604a6b84'
-            reference: 60586c549ffe7d8a6a898f9959736776604a6b84
+            url: 'https://api.github.com/repos/symfony/dotenv/zipball/264ca18dd6e4ab3cfa525ee52cceff9540a1019e'
+            reference: 264ca18dd6e4ab3cfa525ee52cceff9540a1019e
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
         require-dev:
-            symfony/process: ~3.4|~4.0
+            symfony/process: ^4.4|^5.0
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Dotenv\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\Dotenv\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Registers environment variables from a .env file'
         homepage: 'https://symfony.com'
         keywords:
             - dotenv
             - env
             - environment
-        time: '2017-11-30T15:11:43+00:00'
+        support:
+            source: 'https://github.com/symfony/dotenv/tree/v5.2.0-RC2'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-18T09:42:36+00:00'
+    -
+        name: symfony/error-handler
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/error-handler.git'
+            reference: 4be32277488607e38ad1108b08ca200882ef6077
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/error-handler/zipball/4be32277488607e38ad1108b08ca200882ef6077'
+            reference: 4be32277488607e38ad1108b08ca200882ef6077
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            psr/log: ^1.0
+            symfony/polyfill-php80: ^1.15
+            symfony/var-dumper: ^4.4|^5.0
+        require-dev:
+            symfony/deprecation-contracts: ^2.1
+            symfony/http-kernel: ^4.4|^5.0
+            symfony/serializer: ^4.4|^5.0
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\ErrorHandler\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony ErrorHandler Component'
+        homepage: 'https://symfony.com'
+        support:
+            source: 'https://github.com/symfony/error-handler/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-28T21:31:18+00:00'
     -
         name: symfony/event-dispatcher
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/event-dispatcher.git'
-            reference: 6223fb2b68e7059e8d5843c0103999a84e7275cf
+            reference: 2c660884ec9413455af753515140ce696913693c
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/event-dispatcher/zipball/6223fb2b68e7059e8d5843c0103999a84e7275cf'
-            reference: 6223fb2b68e7059e8d5843c0103999a84e7275cf
+            url: 'https://api.github.com/repos/symfony/event-dispatcher/zipball/2c660884ec9413455af753515140ce696913693c'
+            reference: 2c660884ec9413455af753515140ce696913693c
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
+            symfony/event-dispatcher-contracts: ^2
+            symfony/polyfill-php80: ^1.15
         conflict:
-            symfony/dependency-injection: '<3.4'
+            symfony/dependency-injection: '<4.4'
+        provide:
+            psr/event-dispatcher-implementation: '1.0'
+            symfony/event-dispatcher-implementation: '2.0'
         require-dev:
             psr/log: ~1.0
-            symfony/config: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/expression-language: ~3.4|~4.0
-            symfony/stopwatch: ~3.4|~4.0
+            symfony/config: ^4.4|^5.0
+            symfony/dependency-injection: ^4.4|^5.0
+            symfony/error-handler: ^4.4|^5.0
+            symfony/expression-language: ^4.4|^5.0
+            symfony/http-foundation: ^4.4|^5.0
+            symfony/service-contracts: ^1.1|^2
+            symfony/stopwatch: ^4.4|^5.0
         suggest:
             symfony/dependency-injection: ''
             symfony/http-kernel: ''
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\EventDispatcher\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\EventDispatcher\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony EventDispatcher Component'
         homepage: 'https://symfony.com'
-        time: '2017-11-09T17:30:28+00:00'
+        support:
+            source: 'https://github.com/symfony/event-dispatcher/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-01T15:43:26+00:00'
+    -
+        name: symfony/event-dispatcher-contracts
+        version: v2.2.0
+        source:
+            type: git
+            url: 'https://github.com/symfony/event-dispatcher-contracts.git'
+            reference: 0ba7d54483095a198fa51781bc608d17e84dffa2
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0ba7d54483095a198fa51781bc608d17e84dffa2'
+            reference: 0ba7d54483095a198fa51781bc608d17e84dffa2
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            psr/event-dispatcher: ^1
+        suggest:
+            symfony/event-dispatcher-implementation: ''
+        type: library
+        extra:
+            branch-alias:
+                dev-master: 2.2-dev
+            thanks:
+                name: symfony/contracts
+                url: 'https://github.com/symfony/contracts'
+        autoload:
+            psr-4:
+                Symfony\Contracts\EventDispatcher\: ''
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Generic abstractions related to dispatching event'
+        homepage: 'https://symfony.com'
+        keywords:
+            - abstractions
+            - contracts
+            - decoupling
+            - interfaces
+            - interoperability
+            - standards
+        support:
+            source: 'https://github.com/symfony/event-dispatcher-contracts/tree/v2.2.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-09-07T11:33:47+00:00'
     -
         name: symfony/filesystem
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/filesystem.git'
-            reference: c9d4a26759ff75a077e4e334315cb632739b661a
+            reference: bb92ba7f38b037e531908590a858a04d85c0e238
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/filesystem/zipball/c9d4a26759ff75a077e4e334315cb632739b661a'
-            reference: c9d4a26759ff75a077e4e334315cb632739b661a
+            url: 'https://api.github.com/repos/symfony/filesystem/zipball/bb92ba7f38b037e531908590a858a04d85c0e238'
+            reference: bb92ba7f38b037e531908590a858a04d85c0e238
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
+            symfony/polyfill-ctype: ~1.8
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Filesystem\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\Filesystem\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Filesystem Component'
         homepage: 'https://symfony.com'
-        time: '2017-11-21T14:14:53+00:00'
+        support:
+            source: 'https://github.com/symfony/filesystem/tree/v5.2.0-RC2'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-12T09:58:18+00:00'
     -
         name: symfony/finder
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/finder.git'
-            reference: c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c
+            reference: fd8305521692f27eae3263895d1ef1571c71a78d
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/finder/zipball/c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c'
-            reference: c9cdda4dc4a3182d8d6daeebce4a25fef078ea4c
+            url: 'https://api.github.com/repos/symfony/finder/zipball/fd8305521692f27eae3263895d1ef1571c71a78d'
+            reference: fd8305521692f27eae3263895d1ef1571c71a78d
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Finder\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\Finder\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Finder Component'
         homepage: 'https://symfony.com'
-        time: '2017-11-07T14:45:01+00:00'
+        support:
+            source: 'https://github.com/symfony/finder/tree/v5.2.0-RC2'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-18T09:42:36+00:00'
     -
         name: symfony/flex
-        version: v1.0.49
+        version: v1.11.0
         source:
             type: git
             url: 'https://github.com/symfony/flex.git'
-            reference: c3980f5ac79fbe8ba6b0d747baf7e57925f04ae2
+            reference: ceb2b4e612bd0b4bb36a4d7fb2e800c861652f48
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/flex/zipball/c3980f5ac79fbe8ba6b0d747baf7e57925f04ae2'
-            reference: c3980f5ac79fbe8ba6b0d747baf7e57925f04ae2
+            url: 'https://api.github.com/repos/symfony/flex/zipball/ceb2b4e612bd0b4bb36a4d7fb2e800c861652f48'
+            reference: ceb2b4e612bd0b4bb36a4d7fb2e800c861652f48
             shasum: ''
         require:
-            composer-plugin-api: ^1.1
-            php: ^7.0
+            composer-plugin-api: ^1.0|^2.0
+            php: '>=7.1'
         require-dev:
-            composer/composer: ^1.4
-            symfony/phpunit-bridge: ^3.2.8
+            composer/composer: ^1.0.2|^2.0
+            symfony/dotenv: ^4.4|^5.0
+            symfony/filesystem: ^4.4|^5.0
+            symfony/phpunit-bridge: ^4.4|^5.0
+            symfony/process: ^3.4|^4.4|^5.0
         type: composer-plugin
         extra:
-            branch-alias: { dev-master: 1.0-dev }
+            branch-alias:
+                dev-main: 1.9-dev
             class: Symfony\Flex\Flex
         autoload:
-            psr-4: { Symfony\Flex\: src }
+            psr-4:
+                Symfony\Flex\: src
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien.potencier@gmail.com }
-        time: '2017-12-11T15:40:16+00:00'
+            -
+                name: 'Fabien Potencier'
+                email: fabien.potencier@gmail.com
+        description: 'Composer plugin for Symfony'
+        support:
+            issues: 'https://github.com/symfony/flex/issues'
+            source: 'https://github.com/symfony/flex/tree/v1.11.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-12-03T10:57:35+00:00'
     -
         name: symfony/framework-bundle
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/framework-bundle.git'
-            reference: 35df025d3cc6542ca59f2c4b3cba081e24f1a145
+            reference: d070863c197c6eb72ed3a54611b0a1bc5749ecc2
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/framework-bundle/zipball/35df025d3cc6542ca59f2c4b3cba081e24f1a145'
-            reference: 35df025d3cc6542ca59f2c4b3cba081e24f1a145
+            url: 'https://api.github.com/repos/symfony/framework-bundle/zipball/d070863c197c6eb72ed3a54611b0a1bc5749ecc2'
+            reference: d070863c197c6eb72ed3a54611b0a1bc5749ecc2
             shasum: ''
         require:
             ext-xml: '*'
-            php: ^7.1.3
-            symfony/cache: ~3.4|~4.0
-            symfony/config: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/event-dispatcher: ~3.4|~4.0
-            symfony/filesystem: ~3.4|~4.0
-            symfony/finder: ~3.4|~4.0
-            symfony/http-foundation: ~3.4|~4.0
-            symfony/http-kernel: ~3.4|~4.0
+            php: '>=7.2.5'
+            symfony/cache: ^4.4|^5.0
+            symfony/config: ^5.0
+            symfony/dependency-injection: ^5.1
+            symfony/error-handler: ^4.4.1|^5.0.1
+            symfony/event-dispatcher: ^5.1
+            symfony/filesystem: ^4.4|^5.0
+            symfony/finder: ^4.4|^5.0
+            symfony/http-foundation: ^4.4|^5.0
+            symfony/http-kernel: ^5.0
             symfony/polyfill-mbstring: ~1.0
-            symfony/routing: ~3.4|~4.0
+            symfony/polyfill-php80: ^1.15
+            symfony/routing: ^5.1
         conflict:
+            doctrine/persistence: '<1.3'
             phpdocumentor/reflection-docblock: '<3.0'
             phpdocumentor/type-resolver: '<0.2.1'
-            phpunit/phpunit: '<4.8.35|<5.4.3,>=5.0'
-            symfony/asset: '<3.4'
-            symfony/console: '<3.4'
-            symfony/form: '<3.4'
-            symfony/property-info: '<3.4'
-            symfony/serializer: '<3.4'
-            symfony/stopwatch: '<3.4'
-            symfony/translation: '<3.4'
-            symfony/validator: '<3.4'
-            symfony/workflow: '<3.4'
+            phpunit/phpunit: '<5.4.3'
+            symfony/asset: '<5.1'
+            symfony/browser-kit: '<4.4'
+            symfony/console: '<4.4'
+            symfony/dom-crawler: '<4.4'
+            symfony/dotenv: '<5.1'
+            symfony/form: '<4.4'
+            symfony/http-client: '<4.4'
+            symfony/lock: '<4.4'
+            symfony/mailer: '<4.4'
+            symfony/messenger: '<4.4'
+            symfony/mime: '<4.4'
+            symfony/property-info: '<4.4'
+            symfony/serializer: '<4.4'
+            symfony/stopwatch: '<4.4'
+            symfony/translation: '<5.0'
+            symfony/twig-bridge: '<4.4'
+            symfony/twig-bundle: '<4.4'
+            symfony/validator: '<4.4'
+            symfony/web-profiler-bundle: '<4.4'
+            symfony/workflow: '<4.4'
         require-dev:
-            doctrine/annotations: ~1.0
+            doctrine/annotations: ~1.7
             doctrine/cache: ~1.0
-            fig/link-util: ^1.0
+            paragonie/sodium_compat: ^1.8
             phpdocumentor/reflection-docblock: ^3.0|^4.0
-            symfony/asset: ~3.4|~4.0
-            symfony/browser-kit: ~3.4|~4.0
-            symfony/console: ~3.4|~4.0
-            symfony/css-selector: ~3.4|~4.0
-            symfony/dom-crawler: ~3.4|~4.0
-            symfony/expression-language: ~3.4|~4.0
-            symfony/form: ~3.4|~4.0
-            symfony/lock: ~3.4|~4.0
+            symfony/asset: ^5.1
+            symfony/browser-kit: ^4.4|^5.0
+            symfony/console: ^4.4|^5.0
+            symfony/css-selector: ^4.4|^5.0
+            symfony/dom-crawler: ^4.4|^5.0
+            symfony/dotenv: ^5.1
+            symfony/expression-language: ^4.4|^5.0
+            symfony/form: ^4.4|^5.0
+            symfony/http-client: ^4.4|^5.0
+            symfony/lock: ^4.4|^5.0
+            symfony/mailer: ^4.4|^5.0
+            symfony/messenger: ^4.4|^5.0
+            symfony/mime: ^4.4|^5.0
             symfony/polyfill-intl-icu: ~1.0
-            symfony/process: ~3.4|~4.0
-            symfony/property-info: ~3.4|~4.0
-            symfony/security: ~3.4|~4.0
-            symfony/security-core: ~3.4|~4.0
-            symfony/security-csrf: ~3.4|~4.0
-            symfony/serializer: ~3.4|~4.0
-            symfony/stopwatch: ~3.4|~4.0
-            symfony/templating: ~3.4|~4.0
-            symfony/translation: ~3.4|~4.0
-            symfony/validator: ~3.4|~4.0
-            symfony/var-dumper: ~3.4|~4.0
-            symfony/web-link: ~3.4|~4.0
-            symfony/workflow: ~3.4|~4.0
-            symfony/yaml: ~3.4|~4.0
-            twig/twig: ~1.34|~2.4
+            symfony/process: ^4.4|^5.0
+            symfony/property-info: ^4.4|^5.0
+            symfony/security-bundle: ^5.1
+            symfony/security-csrf: ^4.4|^5.0
+            symfony/security-http: ^4.4|^5.0
+            symfony/serializer: ^4.4|^5.0
+            symfony/stopwatch: ^4.4|^5.0
+            symfony/string: ^5.0
+            symfony/translation: ^5.0
+            symfony/twig-bundle: ^4.4|^5.0
+            symfony/validator: ^4.4|^5.0
+            symfony/web-link: ^4.4|^5.0
+            symfony/workflow: ^4.4|^5.0
+            symfony/yaml: ^4.4|^5.0
+            twig/twig: ^2.10|^3.0
         suggest:
             ext-apcu: 'For best performance of the system caches'
             symfony/console: 'For using the console commands'
@@ -578,221 +1003,402 @@ packages:
             symfony/web-link: 'For using web links, features such as preloading, prefetching or prerendering'
             symfony/yaml: 'For using the debug:config and lint:yaml commands'
         type: symfony-bundle
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Bundle\FrameworkBundle\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Bundle\FrameworkBundle\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony FrameworkBundle'
         homepage: 'https://symfony.com'
-        time: '2017-12-04T19:02:29+00:00'
+        support:
+            source: 'https://github.com/symfony/framework-bundle/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-27T14:08:52+00:00'
+    -
+        name: symfony/http-client-contracts
+        version: v2.3.1
+        source:
+            type: git
+            url: 'https://github.com/symfony/http-client-contracts.git'
+            reference: 41db680a15018f9c1d4b23516059633ce280ca33
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/http-client-contracts/zipball/41db680a15018f9c1d4b23516059633ce280ca33'
+            reference: 41db680a15018f9c1d4b23516059633ce280ca33
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+        suggest:
+            symfony/http-client-implementation: ''
+        type: library
+        extra:
+            branch-version: '2.3'
+            branch-alias:
+                dev-main: 2.3-dev
+            thanks:
+                name: symfony/contracts
+                url: 'https://github.com/symfony/contracts'
+        autoload:
+            psr-4:
+                Symfony\Contracts\HttpClient\: ''
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Generic abstractions related to HTTP clients'
+        homepage: 'https://symfony.com'
+        keywords:
+            - abstractions
+            - contracts
+            - decoupling
+            - interfaces
+            - interoperability
+            - standards
+        support:
+            source: 'https://github.com/symfony/http-client-contracts/tree/v2.3.1'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-14T17:08:19+00:00'
     -
         name: symfony/http-foundation
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/http-foundation.git'
-            reference: 40a9400633675adafbc94302004f9ec04589210f
+            reference: 1e6e9e28369ddd3fd66ca14a469c21ae9b51969a
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/http-foundation/zipball/40a9400633675adafbc94302004f9ec04589210f'
-            reference: 40a9400633675adafbc94302004f9ec04589210f
+            url: 'https://api.github.com/repos/symfony/http-foundation/zipball/1e6e9e28369ddd3fd66ca14a469c21ae9b51969a'
+            reference: 1e6e9e28369ddd3fd66ca14a469c21ae9b51969a
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
             symfony/polyfill-mbstring: ~1.1
+            symfony/polyfill-php80: ^1.15
         require-dev:
-            symfony/expression-language: ~3.4|~4.0
+            predis/predis: ~1.0
+            symfony/cache: ^4.4|^5.0
+            symfony/expression-language: ^4.4|^5.0
+            symfony/mime: ^4.4|^5.0
+        suggest:
+            symfony/mime: 'To use the file extension guesser'
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\HttpFoundation\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\HttpFoundation\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony HttpFoundation Component'
         homepage: 'https://symfony.com'
-        time: '2017-11-30T15:11:43+00:00'
+        support:
+            source: 'https://github.com/symfony/http-foundation/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-15T22:55:04+00:00'
     -
         name: symfony/http-kernel
-        version: v4.0.1
+        version: v5.1.9
         source:
             type: git
             url: 'https://github.com/symfony/http-kernel.git'
-            reference: 13185b44064e1aa9297432057e849333d4eedd7e
+            reference: 2d0daaf17c9fe14eb3519b94b83d746554ecfd9c
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/http-kernel/zipball/13185b44064e1aa9297432057e849333d4eedd7e'
-            reference: 13185b44064e1aa9297432057e849333d4eedd7e
+            url: 'https://api.github.com/repos/symfony/http-kernel/zipball/2d0daaf17c9fe14eb3519b94b83d746554ecfd9c'
+            reference: 2d0daaf17c9fe14eb3519b94b83d746554ecfd9c
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
             psr/log: ~1.0
-            symfony/debug: ~3.4|~4.0
-            symfony/event-dispatcher: ~3.4|~4.0
-            symfony/http-foundation: ~3.4|~4.0
+            symfony/deprecation-contracts: ^2.1
+            symfony/error-handler: ^4.4|^5.0
+            symfony/event-dispatcher: ^5.0
+            symfony/http-client-contracts: ^1.1|^2
+            symfony/http-foundation: ^4.4|^5.0
+            symfony/polyfill-ctype: ^1.8
+            symfony/polyfill-php73: ^1.9
+            symfony/polyfill-php80: ^1.15
         conflict:
-            symfony/config: '<3.4'
-            symfony/dependency-injection: '<3.4'
-            symfony/var-dumper: '<3.4'
-            twig/twig: '<1.34|<2.4,>=2'
+            symfony/browser-kit: '<4.4'
+            symfony/cache: '<5.0'
+            symfony/config: '<5.0'
+            symfony/console: '<4.4'
+            symfony/dependency-injection: '<4.4'
+            symfony/doctrine-bridge: '<5.0'
+            symfony/form: '<5.0'
+            symfony/http-client: '<5.0'
+            symfony/mailer: '<5.0'
+            symfony/messenger: '<5.0'
+            symfony/translation: '<5.0'
+            symfony/twig-bridge: '<5.0'
+            symfony/validator: '<5.0'
+            twig/twig: '<2.4'
         provide:
             psr/log-implementation: '1.0'
         require-dev:
             psr/cache: ~1.0
-            symfony/browser-kit: ~3.4|~4.0
-            symfony/config: ~3.4|~4.0
-            symfony/console: ~3.4|~4.0
-            symfony/css-selector: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/dom-crawler: ~3.4|~4.0
-            symfony/expression-language: ~3.4|~4.0
-            symfony/finder: ~3.4|~4.0
-            symfony/process: ~3.4|~4.0
-            symfony/routing: ~3.4|~4.0
-            symfony/stopwatch: ~3.4|~4.0
-            symfony/templating: ~3.4|~4.0
-            symfony/translation: ~3.4|~4.0
-            symfony/var-dumper: ~3.4|~4.0
+            symfony/browser-kit: ^4.4|^5.0
+            symfony/config: ^5.0
+            symfony/console: ^4.4|^5.0
+            symfony/css-selector: ^4.4|^5.0
+            symfony/dependency-injection: ^4.4|^5.0
+            symfony/dom-crawler: ^4.4|^5.0
+            symfony/expression-language: ^4.4|^5.0
+            symfony/finder: ^4.4|^5.0
+            symfony/process: ^4.4|^5.0
+            symfony/routing: ^4.4|^5.0
+            symfony/stopwatch: ^4.4|^5.0
+            symfony/translation: ^4.4|^5.0
+            symfony/translation-contracts: ^1.1|^2
+            twig/twig: ^2.4|^3.0
         suggest:
             symfony/browser-kit: ''
             symfony/config: ''
             symfony/console: ''
             symfony/dependency-injection: ''
-            symfony/var-dumper: ''
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\HttpKernel\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\HttpKernel\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony HttpKernel Component'
         homepage: 'https://symfony.com'
-        time: '2017-12-05T00:18:20+00:00'
+        support:
+            source: 'https://github.com/symfony/http-kernel/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-29T09:27:52+00:00'
     -
-        name: symfony/lts
-        version: dev-master
+        name: symfony/polyfill-intl-grapheme
+        version: v1.20.0
         source:
             type: git
-            url: 'https://github.com/symfony/lts.git'
-            reference: c1affae45b78aee036effa1759237e7fa96d4af2
+            url: 'https://github.com/symfony/polyfill-intl-grapheme.git'
+            reference: c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/lts/zipball/c1affae45b78aee036effa1759237e7fa96d4af2'
-            reference: c1affae45b78aee036effa1759237e7fa96d4af2
+            url: 'https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c'
+            reference: c7cf3f858ec7d70b89559d6e6eb1f7c2517d479c
             shasum: ''
-        conflict:
-            symfony/asset: '>=5'
-            symfony/browser-kit: '>=5'
-            symfony/cache: '>=5'
-            symfony/class-loader: '>=5'
-            symfony/config: '>=5'
-            symfony/console: '>=5'
-            symfony/css-selector: '>=5'
-            symfony/debug: '>=5'
-            symfony/debug-bundle: '>=5'
-            symfony/dependency-injection: '>=5'
-            symfony/doctrine-bridge: '>=5'
-            symfony/dom-crawler: '>=5'
-            symfony/dotenv: '>=5'
-            symfony/event-dispatcher: '>=5'
-            symfony/expression-language: '>=5'
-            symfony/filesystem: '>=5'
-            symfony/finder: '>=5'
-            symfony/form: '>=5'
-            symfony/framework-bundle: '>=5'
-            symfony/http-foundation: '>=5'
-            symfony/http-kernel: '>=5'
-            symfony/inflector: '>=5'
-            symfony/intl: '>=5'
-            symfony/ldap: '>=5'
-            symfony/lock: '>=5'
-            symfony/messenger: '>=5'
-            symfony/monolog-bridge: '>=5'
-            symfony/options-resolver: '>=5'
-            symfony/process: '>=5'
-            symfony/property-access: '>=5'
-            symfony/property-info: '>=5'
-            symfony/proxy-manager-bridge: '>=5'
-            symfony/routing: '>=5'
-            symfony/security: '>=5'
-            symfony/security-bundle: '>=5'
-            symfony/security-core: '>=5'
-            symfony/security-csrf: '>=5'
-            symfony/security-guard: '>=5'
-            symfony/security-http: '>=5'
-            symfony/serializer: '>=5'
-            symfony/stopwatch: '>=5'
-            symfony/symfony: '>=5'
-            symfony/templating: '>=5'
-            symfony/translation: '>=5'
-            symfony/twig-bridge: '>=5'
-            symfony/twig-bundle: '>=5'
-            symfony/validator: '>=5'
-            symfony/var-dumper: '>=5'
-            symfony/web-link: '>=5'
-            symfony/web-profiler-bundle: '>=5'
-            symfony/web-server-bundle: '>=5'
-            symfony/workflow: '>=5'
-            symfony/yaml: '>=5'
-        type: metapackage
+        require:
+            php: '>=7.1'
+        suggest:
+            ext-intl: 'For best performance'
+        type: library
         extra:
-            branch-alias: { dev-master: 4-dev }
+            branch-alias:
+                dev-main: 1.20-dev
+            thanks:
+                name: symfony/polyfill
+                url: 'https://github.com/symfony/polyfill'
+        autoload:
+            psr-4:
+                Symfony\Polyfill\Intl\Grapheme\: ''
+            files:
+                - bootstrap.php
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
-        description: 'Enforces Long Term Supported versions of Symfony components'
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony polyfill for intl''s grapheme_* functions'
         homepage: 'https://symfony.com'
-        abandoned: symfony/flex
-        time: '2018-10-03T12:03:19+00:00'
+        keywords:
+            - compatibility
+            - grapheme
+            - intl
+            - polyfill
+            - portable
+            - shim
+        support:
+            source: 'https://github.com/symfony/polyfill-intl-grapheme/tree/v1.20.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-23T14:02:19+00:00'
+    -
+        name: symfony/polyfill-intl-normalizer
+        version: v1.20.0
+        source:
+            type: git
+            url: 'https://github.com/symfony/polyfill-intl-normalizer.git'
+            reference: 727d1096295d807c309fb01a851577302394c897
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/727d1096295d807c309fb01a851577302394c897'
+            reference: 727d1096295d807c309fb01a851577302394c897
+            shasum: ''
+        require:
+            php: '>=7.1'
+        suggest:
+            ext-intl: 'For best performance'
+        type: library
+        extra:
+            branch-alias:
+                dev-main: 1.20-dev
+            thanks:
+                name: symfony/polyfill
+                url: 'https://github.com/symfony/polyfill'
+        autoload:
+            psr-4:
+                Symfony\Polyfill\Intl\Normalizer\: ''
+            files:
+                - bootstrap.php
+            classmap:
+                - Resources/stubs
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony polyfill for intl''s Normalizer class and related functions'
+        homepage: 'https://symfony.com'
+        keywords:
+            - compatibility
+            - intl
+            - normalizer
+            - polyfill
+            - portable
+            - shim
+        support:
+            source: 'https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-23T14:02:19+00:00'
     -
         name: symfony/polyfill-mbstring
-        version: v1.6.0
+        version: v1.20.0
         source:
             type: git
             url: 'https://github.com/symfony/polyfill-mbstring.git'
-            reference: 2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296
+            reference: 39d483bdf39be819deabf04ec872eb0b2410b531
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296'
-            reference: 2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296
+            url: 'https://api.github.com/repos/symfony/polyfill-mbstring/zipball/39d483bdf39be819deabf04ec872eb0b2410b531'
+            reference: 39d483bdf39be819deabf04ec872eb0b2410b531
             shasum: ''
         require:
-            php: '>=5.3.3'
+            php: '>=7.1'
         suggest:
             ext-mbstring: 'For best performance'
         type: library
         extra:
-            branch-alias: { dev-master: 1.6-dev }
+            branch-alias:
+                dev-main: 1.20-dev
+            thanks:
+                name: symfony/polyfill
+                url: 'https://github.com/symfony/polyfill'
         autoload:
-            psr-4: { Symfony\Polyfill\Mbstring\: '' }
-            files: [bootstrap.php]
+            psr-4:
+                Symfony\Polyfill\Mbstring\: ''
+            files:
+                - bootstrap.php
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Nicolas Grekas', email: p@tchwork.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony polyfill for the Mbstring extension'
         homepage: 'https://symfony.com'
         keywords:
@@ -801,53 +1407,234 @@ packages:
             - polyfill
             - portable
             - shim
-        time: '2017-10-11T12:05:26+00:00'
+        support:
+            source: 'https://github.com/symfony/polyfill-mbstring/tree/v1.20.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-23T14:02:19+00:00'
     -
-        name: symfony/routing
-        version: v4.0.1
+        name: symfony/polyfill-php73
+        version: v1.20.0
         source:
             type: git
-            url: 'https://github.com/symfony/routing.git'
-            reference: 82c0de9bfc4b295e11a172d5f98b60b88611e0e7
+            url: 'https://github.com/symfony/polyfill-php73.git'
+            reference: 8ff431c517be11c78c48a39a66d37431e26a6bed
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/routing/zipball/82c0de9bfc4b295e11a172d5f98b60b88611e0e7'
-            reference: 82c0de9bfc4b295e11a172d5f98b60b88611e0e7
+            url: 'https://api.github.com/repos/symfony/polyfill-php73/zipball/8ff431c517be11c78c48a39a66d37431e26a6bed'
+            reference: 8ff431c517be11c78c48a39a66d37431e26a6bed
             shasum: ''
         require:
-            php: ^7.1.3
-        conflict:
-            symfony/config: '<3.4'
-            symfony/dependency-injection: '<3.4'
-            symfony/yaml: '<3.4'
-        require-dev:
-            doctrine/annotations: ~1.0
-            doctrine/common: ~2.2
-            psr/log: ~1.0
-            symfony/config: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/expression-language: ~3.4|~4.0
-            symfony/http-foundation: ~3.4|~4.0
-            symfony/yaml: ~3.4|~4.0
-        suggest:
-            doctrine/annotations: 'For using the annotation loader'
-            symfony/config: 'For using the all-in-one router or any loader'
-            symfony/dependency-injection: 'For loading routes from a service'
-            symfony/expression-language: 'For using expression matching'
-            symfony/http-foundation: 'For using a Symfony Request object'
-            symfony/yaml: 'For using the YAML loader'
+            php: '>=7.1'
         type: library
         extra:
-            branch-alias: { dev-master: 4.0-dev }
+            branch-alias:
+                dev-main: 1.20-dev
+            thanks:
+                name: symfony/polyfill
+                url: 'https://github.com/symfony/polyfill'
         autoload:
-            psr-4: { Symfony\Component\Routing\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Polyfill\Php73\: ''
+            files:
+                - bootstrap.php
+            classmap:
+                - Resources/stubs
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions'
+        homepage: 'https://symfony.com'
+        keywords:
+            - compatibility
+            - polyfill
+            - portable
+            - shim
+        support:
+            source: 'https://github.com/symfony/polyfill-php73/tree/v1.20.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-23T14:02:19+00:00'
+    -
+        name: symfony/polyfill-php80
+        version: v1.20.0
+        source:
+            type: git
+            url: 'https://github.com/symfony/polyfill-php80.git'
+            reference: e70aa8b064c5b72d3df2abd5ab1e90464ad009de
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de'
+            reference: e70aa8b064c5b72d3df2abd5ab1e90464ad009de
+            shasum: ''
+        require:
+            php: '>=7.1'
+        type: library
+        extra:
+            branch-alias:
+                dev-main: 1.20-dev
+            thanks:
+                name: symfony/polyfill
+                url: 'https://github.com/symfony/polyfill'
+        autoload:
+            psr-4:
+                Symfony\Polyfill\Php80\: ''
+            files:
+                - bootstrap.php
+            classmap:
+                - Resources/stubs
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Ion Bazan'
+                email: ion.bazan@gmail.com
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions'
+        homepage: 'https://symfony.com'
+        keywords:
+            - compatibility
+            - polyfill
+            - portable
+            - shim
+        support:
+            source: 'https://github.com/symfony/polyfill-php80/tree/v1.20.0'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-23T14:02:19+00:00'
+    -
+        name: symfony/process
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/process.git'
+            reference: b25b468538c82f6594058aabaa9bac48d7ef2170
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/process/zipball/b25b468538c82f6594058aabaa9bac48d7ef2170'
+            reference: b25b468538c82f6594058aabaa9bac48d7ef2170
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/polyfill-php80: ^1.15
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\Process\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony Process Component'
+        homepage: 'https://symfony.com'
+        support:
+            source: 'https://github.com/symfony/process/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-02T15:45:32+00:00'
+    -
+        name: symfony/routing
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/routing.git'
+            reference: 461b184cfe5c2e677bbd67761aa377914ab48a16
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/routing/zipball/461b184cfe5c2e677bbd67761aa377914ab48a16'
+            reference: 461b184cfe5c2e677bbd67761aa377914ab48a16
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
+            symfony/polyfill-php80: ^1.15
+        conflict:
+            symfony/config: '<5.0'
+            symfony/dependency-injection: '<4.4'
+            symfony/yaml: '<4.4'
+        require-dev:
+            doctrine/annotations: ~1.2
+            psr/log: ~1.0
+            symfony/config: ^5.0
+            symfony/dependency-injection: ^4.4|^5.0
+            symfony/expression-language: ^4.4|^5.0
+            symfony/http-foundation: ^4.4|^5.0
+            symfony/yaml: ^4.4|^5.0
+        suggest:
+            doctrine/annotations: 'For using the annotation loader'
+            symfony/config: 'For using the all-in-one router or any loader'
+            symfony/expression-language: 'For using expression matching'
+            symfony/http-foundation: 'For using a Symfony Request object'
+            symfony/yaml: 'For using the YAML loader'
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\Routing\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony Routing Component'
         homepage: 'https://symfony.com'
         keywords:
@@ -855,151 +1642,381 @@ packages:
             - routing
             - uri
             - url
-        time: '2017-11-24T14:34:08+00:00'
+        support:
+            source: 'https://github.com/symfony/routing/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-26T23:46:31+00:00'
     -
-        name: symfony/yaml
-        version: v4.0.1
+        name: symfony/service-contracts
+        version: v2.2.0
         source:
             type: git
-            url: 'https://github.com/symfony/yaml.git'
-            reference: 873417cb9949f07be8852d41e3be5ab6f09e1218
+            url: 'https://github.com/symfony/service-contracts.git'
+            reference: d15da7ba4957ffb8f1747218be9e1a121fd298a1
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/yaml/zipball/873417cb9949f07be8852d41e3be5ab6f09e1218'
-            reference: 873417cb9949f07be8852d41e3be5ab6f09e1218
+            url: 'https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1'
+            reference: d15da7ba4957ffb8f1747218be9e1a121fd298a1
             shasum: ''
         require:
-            php: ^7.1.3
-        conflict:
-            symfony/console: '<3.4'
-        require-dev:
-            symfony/console: ~3.4|~4.0
+            php: '>=7.2.5'
+            psr/container: ^1.0
         suggest:
-            symfony/console: 'For validating YAML files using the lint command'
+            symfony/service-implementation: ''
         type: library
         extra:
-            branch-alias: { dev-master: 4.0-dev }
+            branch-alias:
+                dev-master: 2.2-dev
+            thanks:
+                name: symfony/contracts
+                url: 'https://github.com/symfony/contracts'
         autoload:
-            psr-4: { Symfony\Component\Yaml\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Contracts\Service\: ''
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
-        description: 'Symfony Yaml Component'
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Generic abstractions related to writing services'
         homepage: 'https://symfony.com'
-        time: '2017-12-04T18:34:52+00:00'
-    -
-        name: yannoff/composer-dotenv-handler
-        version: 1.1.3
-        source:
-            type: git
-            url: 'https://github.com/yannoff/composer-dotenv-handler.git'
-            reference: 93aeb2e613fe614669a7718574b3665c4a1e7220
-        dist:
-            type: zip
-            url: 'https://api.github.com/repos/yannoff/composer-dotenv-handler/zipball/93aeb2e613fe614669a7718574b3665c4a1e7220'
-            reference: 93aeb2e613fe614669a7718574b3665c4a1e7220
-            shasum: ''
-        require:
-            php: '>=7.1.3'
-            symfony/dotenv: '>=3.4.0'
-        require-dev:
-            composer/composer: ^1.0@dev
-            symfony/filesystem: '^2.3 || ^3 || ^4'
-        type: library
-        extra:
-            class: Yannoff\DotenvHandler\ScriptHandler
-        autoload:
-            psr-4: { Yannoff\DotenvHandler\: src/ }
-        notification-url: 'https://packagist.org/downloads/'
-        license:
-            - MIT
-        authors:
-            - { name: Yannoff, homepage: 'https://github.com/yannoff' }
-        description: 'Composer script to generate .env file against .env.dist template'
-        homepage: 'https://github.com/yannoff/composer-dotenv-handler'
         keywords:
-            - composer
-            - dotenv
-            - env
-        time: '2019-02-21T17:59:44+00:00'
-packages-dev:
+            - abstractions
+            - contracts
+            - decoupling
+            - interfaces
+            - interoperability
+            - standards
+        support:
+            source: 'https://github.com/symfony/service-contracts/tree/master'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-09-07T11:33:47+00:00'
     -
-        name: symfony/process
-        version: v4.0.2
+        name: symfony/string
+        version: v5.1.9
         source:
             type: git
-            url: 'https://github.com/symfony/process.git'
-            reference: 18d1953068e72262830bad593f0366fa62c93fb7
+            url: 'https://github.com/symfony/string.git'
+            reference: a97573e960303db71be0dd8fda9be3bca5e0feea
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/process/zipball/18d1953068e72262830bad593f0366fa62c93fb7'
-            reference: 18d1953068e72262830bad593f0366fa62c93fb7
+            url: 'https://api.github.com/repos/symfony/string/zipball/a97573e960303db71be0dd8fda9be3bca5e0feea'
+            reference: a97573e960303db71be0dd8fda9be3bca5e0feea
             shasum: ''
         require:
-            php: ^7.1.3
+            php: '>=7.2.5'
+            symfony/polyfill-ctype: ~1.8
+            symfony/polyfill-intl-grapheme: ~1.0
+            symfony/polyfill-intl-normalizer: ~1.0
+            symfony/polyfill-mbstring: ~1.0
+            symfony/polyfill-php80: ~1.15
+        require-dev:
+            symfony/error-handler: ^4.4|^5.0
+            symfony/http-client: ^4.4|^5.0
+            symfony/translation-contracts: ^1.1|^2
+            symfony/var-exporter: ^4.4|^5.0
         type: library
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Component\Process\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Component\String\: ''
+            files:
+                - Resources/functions.php
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
-        description: 'Symfony Process Component'
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony String component'
         homepage: 'https://symfony.com'
-        time: '2017-12-14T19:48:22+00:00'
+        keywords:
+            - grapheme
+            - i18n
+            - string
+            - unicode
+            - utf-8
+            - utf8
+        support:
+            source: 'https://github.com/symfony/string/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-24T12:01:57+00:00'
+    -
+        name: symfony/var-dumper
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/var-dumper.git'
+            reference: 006fc2312ee014e1ba46c01185423c010310d00f
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/var-dumper/zipball/006fc2312ee014e1ba46c01185423c010310d00f'
+            reference: 006fc2312ee014e1ba46c01185423c010310d00f
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/polyfill-mbstring: ~1.0
+            symfony/polyfill-php80: ^1.15
+        conflict:
+            phpunit/phpunit: '<5.4.3'
+            symfony/console: '<4.4'
+        require-dev:
+            ext-iconv: '*'
+            symfony/console: ^4.4|^5.0
+            symfony/process: ^4.4|^5.0
+            twig/twig: ^2.4|^3.0
+        suggest:
+            ext-iconv: 'To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).'
+            ext-intl: 'To show region name in time zone dump'
+            symfony/console: 'To use the ServerDumpCommand and/or the bin/var-dump-server script'
+        bin:
+            - Resources/bin/var-dump-server
+        type: library
+        autoload:
+            files:
+                - Resources/functions/dump.php
+            psr-4:
+                Symfony\Component\VarDumper\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony mechanism for exploring and dumping PHP variables'
+        homepage: 'https://symfony.com'
+        keywords:
+            - debug
+            - dump
+        support:
+            source: 'https://github.com/symfony/var-dumper/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-26T23:46:31+00:00'
+    -
+        name: symfony/var-exporter
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/var-exporter.git'
+            reference: fbc3507f23d263d75417e09a12d77c009f39676c
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/var-exporter/zipball/fbc3507f23d263d75417e09a12d77c009f39676c'
+            reference: fbc3507f23d263d75417e09a12d77c009f39676c
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/polyfill-php80: ^1.15
+        require-dev:
+            symfony/var-dumper: ^4.4.9|^5.0.9
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\VarExporter\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Nicolas Grekas'
+                email: p@tchwork.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'A blend of var_export() + serialize() to turn any serializable data structure to plain PHP code'
+        homepage: 'https://symfony.com'
+        keywords:
+            - clone
+            - construct
+            - export
+            - hydrate
+            - instantiate
+            - serialize
+        support:
+            source: 'https://github.com/symfony/var-exporter/tree/v5.2.0-RC2'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-28T21:31:18+00:00'
     -
         name: symfony/web-server-bundle
-        version: v4.0.2
+        version: v4.4.17
         source:
             type: git
             url: 'https://github.com/symfony/web-server-bundle.git'
-            reference: bd56cde308dc2b9d2aa6506ee740c0c3853aeb2f
+            reference: 6e86c6523bc452b595650fc07d621216eac5f373
         dist:
             type: zip
-            url: 'https://api.github.com/repos/symfony/web-server-bundle/zipball/bd56cde308dc2b9d2aa6506ee740c0c3853aeb2f'
-            reference: bd56cde308dc2b9d2aa6506ee740c0c3853aeb2f
+            url: 'https://api.github.com/repos/symfony/web-server-bundle/zipball/6e86c6523bc452b595650fc07d621216eac5f373'
+            reference: 6e86c6523bc452b595650fc07d621216eac5f373
             shasum: ''
         require:
-            php: ^7.1.3
-            symfony/config: ~3.4|~4.0
-            symfony/console: ~3.4|~4.0
-            symfony/dependency-injection: ~3.4|~4.0
-            symfony/http-kernel: ~3.4|~4.0
-            symfony/process: ~3.4|~4.0
+            php: '>=7.1.3'
+            symfony/config: ^3.4|^4.0|^5.0
+            symfony/console: ^3.4|^4.0|^5.0
+            symfony/dependency-injection: ^3.4|^4.0|^5.0
+            symfony/http-kernel: ^3.4|^4.0|^5.0
+            symfony/polyfill-ctype: ~1.8
+            symfony/process: ^3.4.2|^4.0.2|^5.0
         suggest:
             symfony/expression-language: 'For using the filter option of the log server.'
             symfony/monolog-bridge: 'For using the log server.'
         type: symfony-bundle
-        extra:
-            branch-alias: { dev-master: 4.0-dev }
         autoload:
-            psr-4: { Symfony\Bundle\WebServerBundle\: '' }
-            exclude-from-classmap: [/Tests/]
+            psr-4:
+                Symfony\Bundle\WebServerBundle\: ''
+            exclude-from-classmap:
+                - /Tests/
         notification-url: 'https://packagist.org/downloads/'
         license:
             - MIT
         authors:
-            - { name: 'Fabien Potencier', email: fabien@symfony.com }
-            - { name: 'Symfony Community', homepage: 'https://symfony.com/contributors' }
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
         description: 'Symfony WebServerBundle'
         homepage: 'https://symfony.com'
-        time: '2017-12-12T08:41:51+00:00'
+        support:
+            source: 'https://github.com/symfony/web-server-bundle/tree/v4.4.17'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-10-28T20:42:29+00:00'
+    -
+        name: symfony/yaml
+        version: v5.1.9
+        source:
+            type: git
+            url: 'https://github.com/symfony/yaml.git'
+            reference: bb73619b2ae5121bbbcd9f191dfd53ded17ae598
+        dist:
+            type: zip
+            url: 'https://api.github.com/repos/symfony/yaml/zipball/bb73619b2ae5121bbbcd9f191dfd53ded17ae598'
+            reference: bb73619b2ae5121bbbcd9f191dfd53ded17ae598
+            shasum: ''
+        require:
+            php: '>=7.2.5'
+            symfony/deprecation-contracts: ^2.1
+            symfony/polyfill-ctype: ~1.8
+        conflict:
+            symfony/console: '<4.4'
+        require-dev:
+            symfony/console: ^4.4|^5.0
+        suggest:
+            symfony/console: 'For validating YAML files using the lint command'
+        bin:
+            - Resources/bin/yaml-lint
+        type: library
+        autoload:
+            psr-4:
+                Symfony\Component\Yaml\: ''
+            exclude-from-classmap:
+                - /Tests/
+        notification-url: 'https://packagist.org/downloads/'
+        license:
+            - MIT
+        authors:
+            -
+                name: 'Fabien Potencier'
+                email: fabien@symfony.com
+            -
+                name: 'Symfony Community'
+                homepage: 'https://symfony.com/contributors'
+        description: 'Symfony Yaml Component'
+        homepage: 'https://symfony.com'
+        support:
+            source: 'https://github.com/symfony/yaml/tree/v5.1.9'
+        funding:
+            -
+                url: 'https://symfony.com/sponsor'
+                type: custom
+            -
+                url: 'https://github.com/fabpot'
+                type: github
+            -
+                url: 'https://tidelift.com/funding/github/packagist/symfony/symfony'
+                type: tidelift
+        time: '2020-11-28T10:57:20+00:00'
+packages-dev: {  }
 aliases: {  }
 minimum-stability: stable
-stability-flags:
-    symfony/lts: 20
+stability-flags: {  }
 prefer-stable: false
 prefer-lowest: false
 platform:
-    php: ^7.1.3
+    php: '>=7.2.5'
+    ext-ctype: '*'
     ext-iconv: '*'
 platform-dev: {  }
+plugin-api-version: 2.0.0
