@@ -1,6 +1,6 @@
 # yannoff/symfony-kitchen-sink
 
-A project to play around with Symfony 4
+A project to play around with Symfony 4/5
 
 ## License
 
