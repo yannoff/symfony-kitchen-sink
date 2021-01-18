@@ -1,15 +1,16 @@
-nginx:
-    image: nginx:alpine
-    links:
-        - fpm
-    ports:
-        - "8088:80"
+version: '3.6'
+services:
+    fpm:
+        image: yannoff/php-fpm:${PHP_VERSION:-7.1}-fpm-alpine
+        volumes:
+            - ./:/var/www/html
 
-fpm:
-    image: yannoff/php-fpm:7.1-fpm-alpine
-    volumes:
-        - ./:/var/www/html
-
-    ports:
-        - 9000
-        - "8000:8000"
+        ports:
+            - 9000
+            - ${HTTP_PORT:-8000}:8000
+        command:
+            - php
+            - -S
+            - 0.0.0.0:8000
+            - -t
+            - ${DOC_ROOT:-public}/

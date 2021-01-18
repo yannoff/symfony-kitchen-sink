@@ -1,3 +1,6 @@
+###> docker stack
+/.env
+###< docker stack
 
 ###> symfony/framework-bundle ###
 .env
