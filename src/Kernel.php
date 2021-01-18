@@ -34,6 +34,11 @@ class Kernel extends BaseKernel
         }
     }
 
+    public function getProjectDir()
+    {
+        return dirname(__DIR__);
+    }
+
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
     {
         $container->setParameter('container.autowiring.strict_mode', true);
